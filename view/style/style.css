@@ -1,0 +1,148 @@
+* {
+	font-family: "Chakra Petch", sans-serif !important;
+	src: url(./ChakraPetch-Regular.ttf);
+	font-display: auto;
+	margin: 0;
+	color: rgb(255, 255, 255);
+}
+body {
+	position: relative;
+}
+
+#sauf_footer {
+	min-height: calc(100vh - 15px);
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+	display: flex;
+	justify-content: center;
+}
+/* .carrousel-inner div {
+	text-align: center;
+} */
+#bouton_carousel {
+	border: none;
+	background: none;
+}
+
+#section_gauche_accueil {
+	background-image: url("../ressources/images.jpg");
+	background-repeat: repeat;
+	border: #ea0506 2px solid;
+}
+.btn.btn-default.dropdown-toggle {
+	color: white !important;
+	margin-bottom: 80%;
+}
+nav {
+	background-image: url("../ressources/images.jpg");
+	border-bottom: #ea0506 2px solid;
+}
+#section_droite {
+	margin-left: 17%;
+}
+h2 {
+	color: white;
+	padding-left: 15px;
+}
+footer {
+	background: url("../ressources/images.jpg");
+	border-top: #ea0506 2px solid;
+	width: 100%;
+	padding: 10px;
+}
+footer p {
+	margin-bottom: 0 !important;
+}
+
+.cb {
+	background: #e6e6e656;
+}
+input,
+textarea {
+	background-color: grey;
+}
+
+#inscription {
+	background: url("../ressources/images.jpg");
+	/* opacity: 0.75; */
+	background-repeat: repeat;
+	/* background-size: cover; */
+	border: #ea0506 2px solid;
+	text-align: center;
+	margin-top: 15%;
+	padding-bottom: 10px;
+}
+
+#avatar {
+	width: 10%;
+	margin-top: 40px;
+}
+
+.file {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+#ajout {
+	color: none;
+	display: flex;
+}
+/* 
+#upload,
+#file {
+	margin: 0.4rem 0;
+} */
+
+#infos,
+#upload {
+	background: url("../ressources/images.jpg");
+	background-repeat: repeat;
+	border: #ea0506 2px solid;
+}
+
+#modif {
+	display: block;
+	text-align: center;
+}
+
+#upload {
+	text-align: center;
+}
+
+/* img {
+	width: 50% !important;
+} */
+.ligne-carousel {
+	height: 100%;
+}
+.hauteurcarouselligne {
+	height: 80vh;
+}
+/* .inline {
+	display: inline;
+} */
+a {
+	color: #f8f9fa;
+	text-decoration: none !important;
+}
+a:hover {
+	color: #ea0506;
+	text-decoration: none !important;
+}
+@media (max-width: 1050px) {
+	#section_gauche_accueil {
+		/* background-image: none !important; */
+		display: none;
+	}
+}
+@media (min-width: 1050px) {
+	#mobile {
+		display: none;
+	}
+}
+.col-12 {
+	width: none !important;
+}
