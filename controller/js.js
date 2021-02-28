@@ -3,16 +3,18 @@ $("#envoi").click(function (e) {
 
 	var pseudo = encodeURIComponent($("#pseudo").val()); // on sécurise les données
 	var message = encodeURIComponent($("#message").val());
+	var id_post = $("#id_post").val();
 
 	if (message != "") {
-		console.log("jesuis a");
 		// on vérifie que les variables ne sont pas vides
 		$.ajax({
-			url: "./controller_commentaire.php", // on donne l'URL du fichier de traitement
+			url: "controller_commentaire.php", // on donne l'URL du fichier de traitement
 			type: "POST", // la requête est de type POST
-			data: "pseudo=" + pseudo + "&message=" + message, // et on envoie nos données
+			message: message,
+
+			data: "id_post=" + id_post + "&message=" + message, // et on envoie nos données
 		});
-		console.log($.ajax);
+
 		$("#messages").prepend("<p>" + pseudo + " dit : " + message + "</p>"); // on ajoute le message dans la zone prévue
 	}
 });

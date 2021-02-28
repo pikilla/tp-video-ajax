@@ -44,7 +44,7 @@ class Upload {
             ));   
     }
     function uploadCarouselCentral($categorie, $bdd){
-      $requete="SELECT * FROM post WHERE categorie='$categorie' ORDER BY date_post DESC limit 1 ";
+      $requete="SELECT * FROM post WHERE categorie='$categorie' AND `type`='video' ORDER BY date_post DESC limit 1 ";
       $sql=$bdd->query($requete);
       $donnees = $sql->fetch();
       return $donnees;

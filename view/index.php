@@ -90,9 +90,9 @@ require_once '../controller/controller_session.php';
 					require_once './commentaireView.php';
 					
 					 render($grandMediaAffiche);
-					 if(isset($_SESSION['logged_in'])&&$_SESSION['logged_in']===true){
+					
 						render($formComment);
-					 }
+					 
 					 
 					 
 				}
