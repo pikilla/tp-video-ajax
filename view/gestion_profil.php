@@ -2,7 +2,7 @@
 
  
 require_once '../controller/controller_session.php';
-if(!isset($_SESSION['logged_in'])||$_SESSION['logged_in']===false){
+if(((!isset($_SESSION['logged_in'])||$_SESSION['logged_in']===false))&&(!isset($_SESSION['pseudoView']))){
 header("Location: index.php");}
 require_once 'header.php';
 require_once '../controller/controller_fonction.php';

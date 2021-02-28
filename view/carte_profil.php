@@ -2,7 +2,7 @@
 require_once '../modele/membre_bdd.php';
 
 //var_dump($_SESSION['logged_in']);
-
+if(isset($_SESSION['logged_in'])&&$_SESSION['logged_in']===true){
 $lancementFonction= ($membre->select_user($bdd));
 $nom=$_SESSION['nom'];
 $prenom=$_SESSION['prenom'];
@@ -60,7 +60,7 @@ $carte_profil = "<div class='row justify-content-around'>
     <input type='submit' name='envoie' value='Envoyer'/>
     </form>
 </div>
-</div>";
+</div>";}
 if(isset($_SESSION['routing'])&&$_SESSION['routing']==='affichageAutreMembre'){
 $nom1=$_SESSION['nomView'];
 $prenom1=$_SESSION['prenomView'];

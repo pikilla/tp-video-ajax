@@ -1,6 +1,6 @@
 <?php 
-require_once '../modele/fichierAvatar.php';
-
+if(isset($_SESSION['logged_in'])&&$_SESSION['logged_in']===true){
+	require_once '../modele/fichierAvatar.php';
 $avatar1=$_SESSION["avatar"];
 $avatar = "
 <main class='container-fluid mt-2'>
@@ -15,7 +15,7 @@ $avatar = "
 <input type='submit' value='Envoyer le fichier' />
 </form> 
 </main>
-";
+";}
 if(isset($_SESSION['routing'])&&$_SESSION['routing']==='affichageAutreMembre'){
 $avatar2=$_SESSION["avatarView"];
 $avatar_view= "

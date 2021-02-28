@@ -90,6 +90,12 @@ class Upload {
       $sql->execute(array(
         ':id_post'=>$id_post
       ));   
+      $requete="DELETE FROM  commentaire WHERE  `id_post` = :id_post " ;
+  
+      $sql=$bdd->prepare($requete);
+      $sql->execute(array(
+        ':id_post'=>$id_post
+      ));   
        $requete="DELETE FROM `post` WHERE  `id_post` = :id_post " ;
   
       $sql=$bdd->prepare($requete);
